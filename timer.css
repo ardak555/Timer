@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.buton{
+    width: 60px;
+    border-radius: 100%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: all ease-in-out .3s;
+}
+
+.buton:hover{
+    background-color: #94918f63;
+}
+
+
+.buton img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.b .display{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.second-container{
+    color: gray;
+    font: 300 70px/1 'Lato', sans-serif;
+    letter-spacing: 3px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.b{
+    display: flex;
+    flex-direction: column;
+} 
+
+.second-text{
+   display: flex;
+   align-items: flex-end
+   ;
+
+}
+
+.second.shine{
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    animation-duration: 1s;
+}
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
